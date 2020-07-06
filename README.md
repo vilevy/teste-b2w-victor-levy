@@ -18,6 +18,8 @@ Apesar de ser a solução que acredito ser a melhor em questão de usabilidade, 
 
 Assim, optei por fazer uma primeira requisição que buscava algumas Predictions do Places API. As requisições retornam uma lista de até 5 locais, caso o input do usuário não seja específico o suficiente. Ao clicar em uma das opções mostradas, uma nova requisição é feita na Geocoding API (essa segunda requisição é feita automaticamente se a API retornar apenas um resultado).
 
+Devido ao uso da Places API, é necessário utilizar a extensão [Allow CORS: Access-Control-Allow-Origin](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf) para fazer as requisições na API.
+
 Apesar da chave da API do Maps ficar disponível no corpo do código, utilizei o 'dotenv' apenas como boa prática.
 
 ### EXTRA
@@ -25,6 +27,9 @@ Apesar da chave da API do Maps ficar disponível no corpo do código, utilizei o
 Como funcionalidade extra, desenvolvi a possibilidade de o usuário salvar o local pesquisado como favorito. Um botão também oferece a possibilidade de mostrar todos os favoritos do usuário. Além disso, esses favoritos são salvos em localStorage.
 
 ### INSTALAÇÃO DO PROJETO
+
+Devido ao uso da Places API, é necessário utilizar a extensão [Allow CORS: Access-Control-Allow-Origin](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf) para fazer as requisições na API.
+
 Para visualizar um DEMO do projeto, basta entrar [nesse link](https://vilevy.github.io/teste-b2w-victor-levy/)
 
 1. Faça download desse repositório.
