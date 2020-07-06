@@ -18,7 +18,27 @@ Apesar de ser a solução que acredito ser a melhor em questão de usabilidade, 
 
 Assim, optei por fazer uma primeira requisição que buscava algumas Predictions do Places API. As requisições retornam uma lista de até 5 locais, caso o input do usuário não seja específico o suficiente. Ao clicar em uma das opções mostradas, uma nova requisição é feita automaticamente na Geocoding API (essa segunda requisição é feita automaticamente se a API retornar apenas um resultado).
 
+Apesar da chave da API do Maps ficar disponível no corpo do código, utilizei o 'dotenv' apenas como boa prática.
+
 ### EXTRA
 
 Como funcionalidade extra, desenvolvi a possibilidade de o usuário salvar o local pesquisado como favorito. Um botão também oferece a possibilidade de mostrar todos os favoritos do usuário. Além disso, esses favoritos são salvos em localStorage.
+
+### INSTALAÇÃO DO PROJETO
+Para visualizar um DEMO do projeto, basta entrar [nesse link](https://vilevy.github.io/teste-b2w-victor-levy/)
+
+1. Faça download desse repositório.
+2. Rode o comando abaixo no terminal, dentro da pasta do projeto (é necessário ter o gerenciador de pacotes npm instalado)
+```bash
+npm install
+```
+3. Após a instalação das dependências, rode o comando:
+```bash
+npm start
+```
+4. Em seu navegador, entre no endereço
+```http://localhost:8080/```
+
+
+
 
