@@ -12,11 +12,11 @@ const addMapsApiScript = new Promise((resolve, reject) => {
   document.body.appendChild(script);
 });
 
-const renderScriptLoadError = () => {
+const renderScriptLoadError = (err) => {
   const errorMessage = document.createElement('span');
   errorMessage.classList.add('api-load-error');
   errorMessage.innerHTML = 'Erro ao carregar o mapa';
   document.querySelector('#map').appendChild(errorMessage);
 }
 
-addMapsApiScript.then(() => initMap()).catch(renderScriptLoadError());
+addMapsApiScript.then(() => initMap()).catch(() => renderScriptLoadError());
