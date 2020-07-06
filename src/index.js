@@ -7,6 +7,7 @@ const addMapsApiScript = new Promise((resolve, reject) => {
   let script = document.createElement("script");
   script.type = "text/javascript";
   script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.MAPS_API_KEY}&libraries=places`;
+  console.log('aqui', script.src)
   script.addEventListener("load", () => resolve(script), false);
   script.addEventListener("error", () => reject(script), false);
   document.body.appendChild(script);
