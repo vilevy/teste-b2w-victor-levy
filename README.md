@@ -16,7 +16,7 @@ Uma das opções para solucionar essa questão seria utilizar a biblioteca do Pl
 
 Apesar de ser a solução que acredito ser a melhor em questão de usabilidade, eu não estaria fazendo uma requisição AJAX explicitamente e avaliei que essa era uma etapa importante do desafio, uma vez que nas referências do briefing estava um material sobre AJAX.
 
-Assim, optei por fazer uma primeira requisição que buscava algumas Predictions do Places API. As requisições retornam uma lista de até 5 locais, caso o input do usuário não seja específico o suficiente. Ao clicar em uma das opções mostradas, uma nova requisição é feita automaticamente na Geocoding API (essa segunda requisição é feita automaticamente se a API retornar apenas um resultado).
+Assim, optei por fazer uma primeira requisição que buscava algumas Predictions do Places API. As requisições retornam uma lista de até 5 locais, caso o input do usuário não seja específico o suficiente. Ao clicar em uma das opções mostradas, uma nova requisição é feita na Geocoding API (essa segunda requisição é feita automaticamente se a API retornar apenas um resultado).
 
 Apesar da chave da API do Maps ficar disponível no corpo do código, utilizei o 'dotenv' apenas como boa prática.
 
