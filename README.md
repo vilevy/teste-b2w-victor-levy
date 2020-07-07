@@ -41,7 +41,9 @@ npm install
 ```bash
 npm start
 ```
-4. Em seu navegador, entre no endereço
+4. Crie um arquivo chamado `.env` e coloque a chave da API enviado por e-mail. Caso não tenha recebido, é só me pedir aqui pelo GitHub ou pelo e-mail `victorlevygp@gmail.com`
+
+5. Em seu navegador, entre no endereço
 ```http://localhost:8080/```
 
 
